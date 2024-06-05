@@ -15,7 +15,7 @@
   <section class="section">
     <div class="card">
         <div class="card-body">
-            <form action="/admin/student/update {{ $student->id }}" method="post" class="mt-3">
+            <form action="/admin/student/update/ {{ $student->id }}" method="post" class="mt-3">
                 @csrf
                 @method('PUT')
                 <div class="mb-2">
