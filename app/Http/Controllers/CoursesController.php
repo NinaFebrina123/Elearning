@@ -46,7 +46,7 @@ class CoursesController extends Controller
 
 
         // kembalikan kehalaman courses
-           return redirect('admin/courses')->with('message','Data courses berhasil ditambahkan!');
+           return redirect('/admin/courses')->with('message','Data courses berhasil ditambahkan!');
 
 }
         // untuk menampilkan halaman edit
@@ -63,21 +63,22 @@ class CoursesController extends Controller
 }
 
         // method untuk menyimpan hasil update
-         public function update($id, Request $request){
-        // cari data student berdasarkan id
-        $courses = Courses::find($id); // select * FROM courses WHERE id = $id;
+         public function update($id, Request  $request){
+         
+        // cari data courses berdasarkan id
+        $courses = Courses::find($id); // select * FROM students WHERE id = $id;
     
     
          // validasi data yang diterima
          $request->validate([
             'name'=> 'required',
-            'category'=> 'required|numeric',
+            'category'=> 'required',
             'desc'=> 'required',
 
         ]);
      
           // simpan perubahan
-          $courses->update([
+         $courses->update([
             'name'=> $request->name,
             'category'=> $request->category,
             'desc'=> $request->desc,
@@ -86,7 +87,8 @@ class CoursesController extends Controller
     
     
         // kembalikan kehalaman courses
-        return redirect('admin/courses')->with('message','Datacourses berhasil diedit!');
+        return redirect('/admin/courses')->with('message','Data courses berhasil diedit!');
+        
     }
         // method untuk menghapus courses
         public function destroy($id){
@@ -96,7 +98,7 @@ class CoursesController extends Controller
         $courses->delete();
     
         // kembalikan kehalaman courses
-        return redirect('admin/courses')->with('message','Data courses berhasil dihapus!');
+        return redirect('/admin/courses')->with('message','Data courses berhasil dihapus!');
     
     }
 }

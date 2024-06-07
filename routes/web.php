@@ -43,3 +43,6 @@ Route::get('admin/courses/edit/{id}', [CoursesController::class, 'edit']);
 
 // route untuk menyimpan hasil update courses
 Route::put('admin/courses/update/{id}', [CoursesController::class, 'update']);
+
+// route untuk menghapus courses
+Route::delete('admin/courses/delete/{id}', [CoursesController::class, 'destroy']);

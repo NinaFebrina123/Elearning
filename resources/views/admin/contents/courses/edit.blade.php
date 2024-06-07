@@ -27,9 +27,9 @@
                     <label for="category" class="form-label">Category</label>
                     <select name="category" id="category" class="form-select">
                         <option value="">Pilih Category</option>
-                        <option value="dewasa" {{ $courses->category == 'dewasa' ? 'selected' : ''}}>Dewasa</option>
-                        <option value="lansia" {{ $courses->category == 'lansia' ? 'selected' : ''}}>Lansia</option>
-                        <option value="anak - anak" {{ $courses->category == 'anak - anak' ? 'selected' : ''}}>Anak - Anak</option>
+                        <option value="Sejarah Indonesia" {{ $courses->category == 'Sejarah Indonesia' ? 'selected' : ''}}>Sejarah Indonesia</option>
+                        <option value="Ppkn" {{ $courses->category == 'Ppkn' ? 'selected' : ''}}>Ppkn</option>
+                        <option value="Matematika" {{ $courses->category == 'Matematika' ? 'selected' : ''}}>Matematika</option>
                     </select>
                 </div>
 

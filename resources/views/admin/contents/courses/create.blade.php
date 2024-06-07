@@ -28,9 +28,9 @@
                     <label for="category" class="form-label">Category</label>
                     <select name="category" id="category" class="form-select">
                         <option value="">Pilih Category</option>
-                        <option value="dewasa">Dewasa</option>
-                        <option value="lansia">Lansia</option>
-                        <option value="anak - anak">Anak - Anak</option>
+                        <option value="Sejarah Indonesia">Sejarah Indonesia</option>
+                        <option value="Ppkn">Ppkn</option>
+                        <option value="Matematika">Matematika</option>
                     </select>
                 </div>
 
