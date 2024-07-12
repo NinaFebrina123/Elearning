@@ -8,12 +8,14 @@ use App\Http\Controllers\StudentController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified']);
+
 
 Route::middleware('auth')->group(function () {
     
