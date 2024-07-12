@@ -344,7 +344,7 @@
                     <div class="guide-item">
                         <div class="guide-img">
                             <div class="guide-img-efects">
-                                <img src="{{ asset('img/guide-3.jpg')}}" class="img-fluid w-100 rounded-top" alt="Image">
+                                <img src="{{ asset('frontend/img/guide-3.jpg')}}" class="img-fluid w-100 rounded-top" alt="Image">
                             </div>
 
                         </div>
